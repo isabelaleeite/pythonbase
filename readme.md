@@ -18,4 +18,9 @@ python3 -m venv .venv
 
 source .venv/bin/activate
 
+# Tipos de dados compostos e Tuplas
+
+Tupla - tipo composto de sequencia de objetos heterogenios
+Não pode ser alterada
+
 
