@@ -17,3 +17,5 @@ python3 -m venv .venv
 - Ativar o ambiente virtual (linux)
 
 source .venv/bin/activate
+
+
