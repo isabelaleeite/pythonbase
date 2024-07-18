@@ -1,6 +1,8 @@
 """Cadastro de produto"""
 __version__ = "0.1.0"
 
+import pprint
+
 produto = {
     "nome": "Caneta",
     "cores": ["azul", "branco"],
@@ -14,10 +16,23 @@ produto = {
     "codebar": None,
 }
 
-compra = ("Bruno", produto["nome"],3)
-total_compra = compra[2] * produto["preco"]
+cliente = {
+    "nome": "Bruno"
+}
+
+
+compra = {
+    "cliente": cliente,
+    "produto": produto,
+    "quantidade": 3
+} 
+
+#pprint.pprint(compra)
+total_compra = compra["quantidade"] * compra ["produto"]["preco"]
+
 
 print(
-    f"O cliente {compra[0]} comprou {compra[1]}"
-    f" e pagou o total de {total_compra}"
+    f"O cliente {compra['cliente']['nome']}"
+    f"comprou {compra['produto']['nome']}"
+    f"e pagou o total de {total_compra}"
 )
