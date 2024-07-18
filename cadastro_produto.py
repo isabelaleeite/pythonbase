@@ -3,11 +3,12 @@ __version__ = "0.1.0"
 
 produto = {
     "nome": "Caneta",
-    "cor1": "azul",
-    "cor2": "branco",
+    "cores": ["azul", "branco"],
     "preco": 3.23,
-    "dimensao_altura": 12.1,
-    "dimensao_largura": 0.8,
+    "dimensao": {
+        "altura": 12.1,
+        "largura": 0.8,
+    },
     "em_estoque": True,
     "codigo": 45678,
     "codebar": None,
